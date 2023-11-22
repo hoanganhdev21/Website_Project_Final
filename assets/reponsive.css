@@ -1,0 +1,530 @@
+/* Mobile: width <= 740px */
+@media only screen and (max-width: 739px) {
+  html {
+    font-size: 50.5%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar__area {
+    border-bottom: 0.1rem solid #ccc;
+    padding: 1.5rem 0rem;
+  }
+
+  .navbar__brand img {
+    width: 18rem;
+  }
+
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .navbar__nav {
+    position: absolute;
+    top: 100%;
+    display: block;
+    line-height: 2;
+    width: 100%;
+    padding: 3rem 0;
+    left: -100%;
+    z-index: 999;
+    padding-left: 2rem;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    border-top: 0.1rem solid #ccc;
+  }
+
+  /* show active menu */
+  .navbar__nav.active {
+    left: 0;
+  }
+
+  /* Icon reposive navbar */
+  .option-item-btn {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .fa-times {
+    color: #fe4c1c;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Arrow links focus and hover nav-item>nav-links */
+  .main__nav .navbar .navbar__nav .nav-item a.active .fa-angle-down,
+  .main__nav .navbar .navbar__nav .nav-item a.active .fa-angle-down {
+    transform: rotate(180deg);
+    color: #fe4c1c;
+  }
+
+  /* form modal dialog */
+  .sidebar__modal .modal__dialog .modal-content {
+    width: 100%;
+  }
+
+  .sidebar__modal .modal-content .modal-body .sidebar__contact-info h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* Custom Banner Home Page ========================= */
+  .banner__area {
+    padding-top: 15rem;
+  }
+
+  .banner__area .container {
+    padding: 0 3em;
+  }
+
+  .main__banner-content h1 {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    margin-top: 3rem;
+  }
+
+  /* Banner shape */
+  .shape1,
+  .shape2,
+  .shape4,
+  .shape5 {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .shape3 {
+    width: 10rem;
+    height: 10rem;
+    top: 15%;
+    left: 50%;
+  }
+
+  .shape4 img,
+  .shape5 img {
+    width: 5rem;
+  }
+
+  /* ==== About area ===== */
+  .about__area .container {
+    padding: 0rem 2rem;
+    text-align: center;
+  }
+
+  .about__area .container .box-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem;
+  }
+
+  .about-content .funfacts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ============ how its work area ============= */
+  .how__its--work-area .container .row__how-its {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-its-work-content .sub-title,
+  .how-its-work-content h2,
+  .how-its-work-content .desc {
+    text-align: center;
+  }
+
+  .how-its-work-content .inner-box .single-item {
+    padding-bottom: 2rem;
+  }
+  .row__how-its .how__its-box {
+    max-width: 100%;
+  }
+
+  .how__its-box .how-its-box-img img {
+    margin-top: 0rem;
+  }
+
+  /* =============== project start area ============ */
+  .project-start-area .container {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  /* =============== subscribe ========================= */
+  .subscribe-content .newsletter-form .default-btn {
+    position: relative;
+    margin-top: 2.5rem;
+    background: #fe4c1c;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    animation: none;
+    animation: defaultBtn 3s linear infinite;
+  }
+
+  .subscribe-area .shape9,
+  .subscribe-area .shape10 {
+    margin-right: 5rem;
+    width: 15rem;
+    height: 15rem;
+    top: 10rem;
+  }
+
+  .subscribe-area .shape11 {
+    top: 17rem;
+    margin-left: 5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .subscribe-area .shape12 {
+    top: 13rem;
+    margin-left: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /* ==================== Footer ============================== */
+  .footer-area .container {
+    padding: 0 3rem;
+  }
+
+  /* Footer bottom */
+  .footer-area .footer-bottom-area .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-area .footer-bottom-area li {
+    font-size: 1.4rem;
+  }
+
+  .footer-area .footer-shape {
+    display: none;
+  }
+
+  /* About Page ================================================= */
+  .feedback-area .container {
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  .feedback-row .feedback-img {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5rem;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .feedback-row {
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  }
+
+  .feedback-slider .box {
+    padding: 12rem;
+  }
+
+  /* Contact page ========================================== */
+  .contact__page-area .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+
+  .contact__page-area .contact-form {
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  .contact__page-area .container {
+    padding: 0rem 2rem;
+  }
+
+  .contact-info-area .container {
+    padding: 0rem 2rem;
+  }
+
+  .contact-info-area .container .info-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 0rem;
+  }
+
+  .contact__page-area {
+    padding-bottom: 1rem;
+  }
+
+  /* Page title area shape */
+  .page__title-area .shape1 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .page__title-area .shape2 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .page__title-area .shape4 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .page__title-area .shape5 {
+    top: 12rem;
+    width: 5rem;
+    height: 5rem;
+    left: 5rem;
+  }
+
+  .page__title-area .shape6 {
+    top: 16rem;
+    width: 4rem;
+    left: 45%;
+  }
+
+  .overview-area .container {
+    padding: 0rem 2rem;
+    text-align: center;
+  }
+
+  .overview-content .funfacts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overview-area .container {
+    padding: 0rem 2rem;
+  }
+  .overview-area .container .overview-box {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  .overview-box .overview-content .features-list {
+    text-align: justify !important;
+  }
+
+  .contact__page-area .contact-area {
+    padding-bottom: 0rem;
+  }
+}
+
+/* Tablets: width >= 740px and width <= 1024 */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  .navbar__area {
+    border-bottom: 0.1rem solid #ccc;
+  }
+
+  .navbar__brand img {
+    width: 18rem;
+  }
+
+  .container {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .navbar__nav {
+    position: absolute;
+    top: 100%;
+    display: block;
+    line-height: 1rem;
+    width: 100%;
+    padding: 3rem 0;
+    left: -100%;
+    z-index: 999;
+    padding-left: 2rem;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.5rem 1.5rem;
+  }
+
+  /* show active menu */
+  .navbar__nav.active {
+    left: 0;
+  }
+
+  /* Icon reposive navbar */
+  .option-item-btn {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .fa-times {
+    color: #fe4c1c;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Arrow links focus and hover nav-item>nav-links */
+  .main__nav .navbar .navbar__nav .nav-item a.active .fa-angle-down,
+  .main__nav .navbar .navbar__nav .nav-item a.active .fa-angle-down {
+    transform: rotate(180deg);
+    color: #fe4c1c;
+  }
+
+  /* form modal dialog */
+  .sidebar__modal .modal__dialog .modal-content {
+    width: 100%;
+  }
+
+  .sidebar__modal .modal-content .modal-body .sidebar__contact-info h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* ======== Banner ======== */
+  .banner__area {
+    padding-bottom: 15rem;
+    padding-top: 25rem;
+    position: relative;
+  }
+
+  .banner__area .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  /* Banner shape */
+  .shape1,
+  .shape2,
+  .shape4,
+  .shape5 {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .shape4 img,
+  .shape5 img {
+    width: 5rem;
+  }
+
+  .about__area .container {
+    padding: 0rem 5rem;
+  }
+
+  /* ============ how its work area ============= */
+  .how__its--work-area .container .row__how-its {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-its-work-content .inner-box .single-item {
+    padding-bottom: 4rem;
+  }
+  .row__how-its .how__its-box {
+    max-width: 100%;
+  }
+
+  .how__its-box .how-its-box-img img {
+    margin-top: 0rem;
+  }
+
+  /* ==================== Project area ====================== */
+  .project-start-area .container {
+    padding: 0rem 5rem;
+  }
+
+  .project-start-area .container .project-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+  }
+
+  .project-start-area .container img {
+    width: 100%;
+  }
+
+  /* ==================== Shape subscribe ==================== */
+  .subscribe-content .newsletter-form {
+    max-width: 65rem;
+  }
+
+  .subscribe-area .shape9,
+  .subscribe-area .shape10 {
+    margin-right: 5rem;
+    width: 15rem;
+    height: 15rem;
+    top: 7rem;
+  }
+
+  .subscribe-area .shape10 img {
+    width: 100%;
+    animation: animateLeft 10s linear infinite;
+  }
+
+  .subscribe-area .shape11 {
+    top: 10rem;
+    margin-left: 10rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .subscribe-area .shape12 {
+    top: 7rem;
+    margin-left: 15rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /* ==================== Footer ============================== */
+  .footer-area .container {
+    padding: 0 5rem;
+  }
+
+  /* About Page ================================================= */
+  .feedback-area .container {
+    padding: 0 5rem;
+  }
+
+  .feedback-row .feedback-img {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5rem;
+  }
+
+  .feedback-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* gap: 2rem; */
+  }
+
+  /* Contact page ================================================== */
+  .contact__page-area .container {
+    padding: 0rem 5rem;
+  }
+
+  .contact__page-area .contact-area {
+    padding-bottom: 0rem;
+  }
+
+  /* Page dịch vụ thiết kế website chuyên nghiệp */
+  .overview-area .container {
+    padding: 0rem 5rem;
+  }
+}
+
+/* Desktop and PC: width > 1024 */
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
